@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' 'self' https://analytics-eu.clickdimensions.com/">
+<meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' https://analytics-eu.clickdimensions.com/">
 <html>
 <body>
 <h1>Hello World</h1>
@@ -8,12 +8,8 @@
   
 <script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js" unsafe-inline="false" > </script> 
 
-<script type="text/javascript"> 
-  var cdAnalytics = new clickdimensions.Analytics('analytics-eu.clickdimensions.com'); 
-  cdAnalytics.setAccountKey('axhkovisiEO9U5zmMFiMNg'); 
-  cdAnalytics.setDomain('github.io'); 
-  cdAnalytics.setScore(typeof(cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore)); 
-  cdAnalytics.trackPage(); 
-</script> 
+  <script type="text/javascript" src="http://freshclickdimensions.github.io/cdtrack.js"></script>
+
+
 </body>
 </html>
