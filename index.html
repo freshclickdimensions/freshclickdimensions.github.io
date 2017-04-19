@@ -3,14 +3,17 @@
  <head> <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' https://analytics-eu.clickdimensions.com/ https://freshclickdimensions.github.io">
   </head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-  
-  
-<script type="text/javascript" src="https://analytics-eu.clickdimensions.com/ts.js" unsafe-inline="false" > </script> 
+<script>
 
-  <script type="text/javascript" src="https://freshclickdimensions.github.io/cdtrack.js"></script>
+$(function() {
 
+var search = window.location.search;
 
+$("#foo").attr("src", $("#foo").attr("src")+search);
+
+});
+
+</script><iframe id="foo"src="http://analytics.clickdimensions.com/clickdimensionscom-au9y6/pages/4mxw5irneeeunqavxwg1ya.html" allowtransparency="true" width="100%" height="500px" type="text/html" frameborder="0" style="border:0"></iframe>
+ 
 </body>
 </html>
